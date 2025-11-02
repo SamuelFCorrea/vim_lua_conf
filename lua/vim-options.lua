@@ -26,6 +26,7 @@ vim.o.pumheight = 15
 
 vim.g.mapleader = " "
 
+vim.keymap.set("n", "<Leader>nf", ":lua require('neogen').generate()<CR>")
 vim.keymap.set('n', '<leader>a', 'A')
 vim.keymap.set('n', '<leader>i', 'I')
 vim.keymap.set('n', '<leader>w', ':w<CR>')

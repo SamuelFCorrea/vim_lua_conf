@@ -17,10 +17,7 @@ return {
     "neovim/nvim-lspconfig",
     lazy = false,
     config = function()
-      local capabilities = require('cmp_nvim_lsp').default_capabilities()
-
-      local lspconfig = require("lspconfig")
-      lspconfig.ruby_lsp.setup({
+      vim.lsp.config('ruby_lsp', {
         capabilities = capabilities,
         init_options = {
           formater = "rubocop",
