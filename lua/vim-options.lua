@@ -18,6 +18,9 @@ vim.o.timeoutlen = 300
 -- Use terminal colors
 vim.cmd("set termguicolors")
 
+-- Highlight current line
+vim.opt.cursorline = true
+
 -- Show search result as you type
 vim.o.incsearch = true
 
